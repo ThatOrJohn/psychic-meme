@@ -1,5 +1,5 @@
 name: learn-github-actions
-run-name: ${{ github.actor }} merged a pull request
+run-name: ${{ github.actor }} triggered an action
 on:
   pull_request:
     types:
@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-      echo The PR was merged
+        echo The PR was merged
