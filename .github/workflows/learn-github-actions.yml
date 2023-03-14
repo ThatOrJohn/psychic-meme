@@ -2,6 +2,9 @@ name: learn-github-actions
 run-name: ${{ github.actor }} triggered an action
 on:
   pull_request:
+    branches:
+      - main
+      - staging
     types:
       - closed
 
